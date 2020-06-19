@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Faculty</title>
+</head>
+<body>
+<h1>
+Add a faculty/staff
+</h1>
+<h2>
+    You may find that your favorite professor isn't in the API or some staff are not showing up. This may be my fault.
+    Feel free to submit this form and I'll get back to you whenever possible.
+</h2>
+<form method="POST" action="{{ url_for('add_faculty') }}">
+    {{ form.csrf_token }}
+
+    {{ form.your_name.label }}:
+    <div class="yn">
+        {{ form.your_name }}
+    </div>
+    <br>
+    {{ form.your_email.label }}:
+    <div class="e">
+        {{ form.your_email }}
+    </div>
+    {% if error %}
+    <ul>
+        <li style="color:red"> {{ error }} </li>
+    </ul>
+    {% endif %}
+    <br>
+    {{ form.first_name.label }}:
+    <div class="fn">
+        {{ form.first_name }}
+    </div>
+    <br>
+    {{ form.middle_name.label }}:
+    <div class="mn">
+        {{ form.middle_name }}
+    </div>
+    <br>
+    {{ form.last_name.label }}:
+    <div class="ln">
+        {{ form.last_name }}
+    </div>
+    <br>
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>
