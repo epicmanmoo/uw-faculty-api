@@ -1,6 +1,6 @@
 # uw-faculty-api
 
-## http://www.uwfaculty-lmao.tk/
+## http://www.uwfaculty-lmao.tk/ (may take a while to load up at first).
 
 ## If you don't feel comfortable using http, feel free to use https://uwfaculty-api.herokuapp.com/ as your BASE URL. You'll have to switch all of the links with the https one.
 
