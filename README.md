@@ -1,6 +1,6 @@
 # uw-faculty-api
 
-## http://www.uwfaculty-lmao.tk/ (may take a while to load up at first).
+## http://www.uwfaculty-lmao.tk/ (may take a while to load up at first). This link won't work by June 2021, so I recommend just using the below link anyway.
 
 ## If you don't feel comfortable using http, feel free to use https://uwfaculty-api.herokuapp.com/ as your BASE URL. You'll have to switch all of the links with the https one.
 
