@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Nice. I trust that you know what you're doing.</h1>
+<form method="POST" action="{{ url_for('top_secret', good_id=id) }}">
+    {{ form.csrf_token }}
+
+    {{ form.fac_name.label }}
+    <div class="fn">
+        {{ form.fac_name }}
+    </div>
+    {{ form.fac_phone.label }}
+    <div class="pn">
+        {{ form.fac_phone }}
+    </div>
+    {{ form.fac_email.label }}
+    <div class="email">
+        {{ form.fac_email }}
+    </div>
+    {{ form.fac_description.label }}
+    <div class="desc">
+        {{ form.fac_description }}
+    </div>
+    <input type="submit" name="Add" value="Submit">
+</form>
+
+</body>
+</html>
